@@ -1,3 +1,42 @@
+:root {
+    --hue: 150;
+    --background-color: hsl(var(--hue), 70%, 25%);
+    --foreground-color: hsl(var(--hue), 70%, 75%);
+    --commands-color: hsl(calc(var(--hue) - 100), 70%, 75%);
+}
+
+body {
+    text-align: center;
+    overflow-y: scroll;
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+}
+
 .heading img {
-    width: 35%;    
+    width: 20%; 
+    margin-bottom: 5%;   
+}
+
+.server-commands {
+    margin-top: 5%;
+}
+
+.server-commands table {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.server-commands table {
+    border-spacing: 30px 5px;
+}
+
+.server-commands table tr > :first-child {
+    color: var(--commands-color);
+}
+
+.footer {
+    margin-top: 200px;
+    font-size: 0.7rem;
+    font-style: italic;
 }
