@@ -1,24 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Messgae of the Day</title>
     <style>
-        :root {
-            --hue: 150;
-            --background-color: hsl(var(--hue), 70%, 25%);
-            --foreground-color: hsl(var(--hue), 70%, 75%);
-            --commands-color: hsl(calc(var(--hue) - 100), 70%, 75%);
-        }
-
         body {
             text-align: center;
             overflow-y: scroll;
-            background-color: var(--background-color);
-            color: var(--foreground-color);
+            background-color: hsl(150, 70%, 25%);
+            color: hsl(150, 70%, 75%);
         }
 
         .heading img {
@@ -40,8 +30,8 @@
             border-spacing: 30px 5px;
         }
 
-        .server-commands table tr> :first-child {
-            color: var(--commands-color);
+        .server-commands table tr :first-child {
+            color: hsl(50, 70%, 75%);
         }
 
         .footer {
@@ -68,7 +58,7 @@
             <h2>可用指令</h2>
             <!-- a table of two columns -->
             <table>
-                <tr>
+                <tbody><tr>
                     <td>!jg 或 !joingame</td>
                     <td>从旁观加入游戏</td>
                 </tr>
@@ -96,13 +86,13 @@
                     <td>!maps</td>
                     <td>投票换图</td>
                 </tr>
-            </table>
+            </tbody></table>
 
         </div>
     </div>
     <div class="footer">
         <p>Copyright @ 2023 沙爹王 </p>
     </div>
-</body>
 
-</html>
+
+</body></html>
