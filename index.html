@@ -1,4 +1,7 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +10,32 @@
         body {
             text-align: center;
             overflow-y: scroll;
-            background-color: hsl(150, 70%, 25%);
-            color: hsl(150, 70%, 75%);
+            background-color: hsl(220, 10%, 10%);
+            color: hsl(220, 10%, 80%);
+            font-size: 1.5rem;
         }
 
         .heading img {
             width: 20%;
-            margin-bottom: 5%;
-        }
-
-        .server-commands {
-            margin-top: 5%;
+            margin-bottom: 2%;
         }
 
         .server-commands table {
             text-align: left;
             margin-left: auto;
             margin-right: auto;
-        }
-
-        .server-commands table {
             border-spacing: 30px 5px;
         }
 
         .server-commands table tr :first-child {
-            color: hsl(50, 70%, 75%);
+            color: hsl(50, 70%, 70%);
+            transition: 0.25s;
+        }
+
+        .server-commands table tr :first-child:hover {
+            color: hsl(50, 70%, 90%);
+            transform: scale(1.1);
+            text-shadow: 0 0 5px #FF0000, 0 0 7px #0000FF;
         }
 
         .footer {
@@ -40,7 +44,7 @@
             font-style: italic;
         }
     </style>
-    <script src="script.js"></script>
+    <script></script>
 </head>
 
 <body>
@@ -49,44 +53,43 @@
         <img src="/images/ysxb_ascii_art.png" alt="yaju senpai Ascii art">
     </div>
     <div class="content">
-        <div class="server-info">
-            <h2>服务器信息</h2>
-            <!-- <p>服务器IP: 120.77.179.64</p> -->
-            <p>深圳·广东</p>
-        </div>
         <div class="server-commands">
             <h2>可用指令</h2>
-            <!-- a table of two columns -->
             <table>
-                <tbody><tr>
-                    <td>!jg 或 !joingame</td>
-                    <td>从旁观加入游戏</td>
-                </tr>
-                <tr>
-                    <td>!away</td>
-                    <td>切换至旁观</td>
-                </tr>
-                <tr>
-                    <td>!zs 或 !kill</td>
-                    <td>自杀</td>
-                </tr>
-                <tr>
-                    <td>!buy</td>
-                    <td>打开商店菜单</td>
-                </tr>
-                <tr>
-                    <td>!buy &lt;物品名&gt;</td>
-                    <td>直接购买物品</td>
-                </tr>
-                <tr>
-                    <td>!rb</td>
-                    <td>再次购买</td>
-                </tr>
-                <tr>
-                    <td>!maps</td>
-                    <td>投票换图</td>
-                </tr>
-            </tbody></table>
+                <tbody>
+                    <tr>
+                        <td>!jg 或 !joingame</td>
+                        <td>从旁观加入游戏</td>
+                    </tr>
+                    <tr>
+                        <td>!away</td>
+                        <td>切换至旁观</td>
+                    </tr>
+                    <tr>
+                        <td>!zs 或 !kill</td>
+                        <td>自杀</td>
+                    </tr>
+                    <tr>
+                        <td>!buy</td>
+                        <td>打开商店菜单</td>
+                    </tr>
+                    <tr>
+                        <td>!buy &lt;物品名&gt;</td>
+                        <td>直接购买物品</td>
+                    </tr>
+                    <tr>
+                        <td>!rb</td>
+                        <td>再次购买</td>
+                    </tr>
+                    <tr>
+                        <td>!maps</td>
+                        <td>投票换图</td>
+                    </tr>
+                    <tr>
+                        <td>!mvp</td>
+                        <td>排名信息</td>
+                </tbody>
+            </table>
 
         </div>
     </div>
@@ -95,4 +98,6 @@
     </div>
 
 
-</body></html>
+</body>
+
+</html>
